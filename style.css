@@ -1,0 +1,94 @@
+/* Base Reset & Body Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    color: #333;
+    text-align: center;
+
+    background-image: url('texture\ \(1\).png');
+    background-repeat: repeat;
+    background-size: auto; 
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #4CAF50, #45A050);
+    color: white;
+    padding: 40px 20px;
+    font-size: 1.5em;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    background: #e3f2fd;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background 0.3s, transform 80ms ease-in;
+    font-weight: 600;
+}
+
+.button:hover {
+    background: #45A049;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    section {
+        padding: 30px;
+        margin: 20px auto;
+    }
+    .button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
